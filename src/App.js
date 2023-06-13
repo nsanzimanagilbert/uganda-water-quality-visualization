@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'rsuite/styles/index.less'
+import 'rsuite/dist/rsuite.min.css'
 import './App.css';
+
+import SideNav from './components/SideNav';
+import SampleChartOne from './components/charts/SampleChartOne';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App d-flex bd-highlight" style={{width: '100%'}}>
+      <div className='side-nav'>
+      <SideNav></SideNav>
+      </div>
+      <div className='main-content p-2 flex-grow-1 bd-highlight'>
+        <SampleChartOne></SampleChartOne>
+
+      </div>
+      
+     
     </div>
   );
 }

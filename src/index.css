@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.side-nav{
+  position: fixed;
+  height: 100vh;
+}
+.rs-sidenav{
+  height: 100%;
+}
+.main-content{
+  position: absolute;
+  left: 240px;
+  width: 80%;
+}
